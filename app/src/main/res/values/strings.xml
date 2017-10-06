@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Cattloo</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_regist">Registrasi</string>
+    <string name="title_activity_home">Pasar</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="prompt">Pilih Filter</string>
+
+    <string-array name="kategori_cari">
+        <item>Jenis Hewan</item>
+        <item>Lokasi</item>
+        <item>Harga</item>
+    </string-array>
+
+    <string-array name="jenis_hewan">
+        <item>Kambing</item>
+        <item>Domba</item>
+        <item>Sapi</item>
+    </string-array>
+
+    <string-array name="harga">
+        <item>0 - 10.000.000</item>
+        <item>10.000.000 - 20.000.000</item>
+        <item>20.000.000 - 30.000.000</item>
+        <item>> 30.000.000</item>
+    </string-array>
+    <string-array name="noData">
+        <item>--Pilih Jenis Filter--</item>
+    </string-array>
+
+    <string name="title_activity_detail_hewan">Detail Pasar</string>
+    <string name="title_activity_ternakku">Kandang</string>
+    <string name="title_activity_detail_ternakku">Detail Kandang</string>
+    <string name="title_activity_history">Perawatan Ternak</string>
+    <string name="title_activity_laporan">Laporan</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_test">Laporan</string>
+    <string name="title_activity_detail_history">Detail Perawatan</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_profil">Profil</string>
+    <string name="title_activity_ubah_sandi">Ubah Sandi</string>
+    <string name="title_activity_alumni">Alumni</string>
+    <string name="title_activity_pesan">Pesan Ternak</string>
+    <string name="title_activity_detail_pesan">Detail Sampel</string>
+    <string name="title_activity_detail_alumni">Detail Alumni</string>
+    <string name="title_activity_konfirm">Konfirm Belanja</string>
+    <string name="title_activity_peternak">Info Peternak</string>
+    <string name="title_activity_kandang">Info Kandang</string>
+    <string name="title_activity_asisten">Info Asisten</string>
+    <string name="title_activity_info_peternak">Info Peternak</string>
+    <string name="title_activity_info_kandang">Info Kandang</string>
+    <string name="title_activity_info_asisten">Info Asisten</string>
+</resources>

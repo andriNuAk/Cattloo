@@ -1,0 +1,85 @@
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card"
+    card_view:cardCornerRadius="5dp"
+    android:background="@color/colorBgWhite"
+    card_view:cardBackgroundColor="@color/colorBgWhite"
+    card_view:cardPreventCornerOverlap="false">
+
+    <RelativeLayout
+        android:id="@+id/relAlumni"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgTernakUtama"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/txtSpesies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgTernakUtama"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#5b0a0a0a"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="Test"
+            android:textColor="@color/colorBgWhite"
+            android:textSize="15dp" />
+
+        <RelativeLayout
+            android:id="@+id/relDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtSpesies"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:id="@+id/txtTglJual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textColor="@color/colorTextBgGrey"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/txtHargaJual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTglJual"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textColor="@color/colorTextBgGrey"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/btnAlumniDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button_presed"
+                android:text="Lihat Detail"
+                android:textColor="@color/colorBgWhite"
+                android:textSize="10dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

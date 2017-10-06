@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.dragmetohell.cattloo.laporan.LaporanActivity">
+    <item
+        android:id="@+id/action_more"
+        android:icon="@drawable/profil_icon_menu"
+        android:title="more"
+        android:orderInCategory="100"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/profil"
+                android:orderInCategory="100"
+                android:icon="@drawable/profil_icon_user"
+                android:title="profil"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/logout"
+                android:orderInCategory="100"
+                android:icon="@drawable/profil_icon_off"
+                android:title="logout"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+</menu>

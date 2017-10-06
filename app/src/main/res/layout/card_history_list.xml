@@ -1,0 +1,99 @@
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card"
+    android:layout_margin="10dp"
+    card_view:cardCornerRadius="5dp"
+    android:background="@color/colorBgWhite"
+    card_view:cardBackgroundColor="@color/colorBgWhite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/imgUtama"
+            android:layout_margin="10dp"
+
+
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtSpesies"
+            android:text="Test"
+            android:layout_alignTop="@+id/imgUtama"
+            android:layout_toRightOf="@+id/imgUtama"
+            android:layout_toEndOf="@+id/imgUtama"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:layout_marginBottom="3dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtSpesies"
+            android:layout_alignLeft="@+id/imgUtama"
+            android:layout_alignStart="@+id/txtSpesies"
+            android:id="@+id/lineaHome1"
+            android:layout_marginBottom="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:text="Kode Ternak"
+                android:textColor="#212121"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/txtKodeVisual"
+                android:textSize="12dp"
+                android:textColor="#757575"
+                android:layout_alignBottom="@+id/linearLayout"
+                android:layout_toRightOf="@+id/imgUtama"
+                android:layout_toEndOf="@+id/imgUtama" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lineaHome1"
+            android:id="@+id/linearLayout"
+            android:layout_alignLeft="@+id/imgUtama"
+            android:layout_alignStart="@+id/txtSpesies"
+            android:layout_marginBottom="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:text="Tanggal Visual"
+                android:textColor="#212121"/>
+
+
+            <TextView
+                android:id="@+id/txtTanggalVisual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtKodeVisual"
+                android:layout_toEndOf="@+id/imgUtama"
+                android:layout_toRightOf="@+id/imgUtama"
+                android:text="New Text"
+                android:textColor="#757575"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

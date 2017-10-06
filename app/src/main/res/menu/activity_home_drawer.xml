@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Ternakku">
+        <menu>
+            <item
+                android:id="@+id/beranda"
+                android:icon="@drawable/beranda"
+                android:title="Pasar" />
+            <item
+                android:id="@+id/lihat_ternak"
+                android:icon="@drawable/icon_search"
+                android:title="Lihat Kandang" />
+            <item
+                android:id="@+id/history"
+                android:icon="@drawable/icon_book"
+                android:title="Alumni" />
+            <item
+                android:id="@+id/pesan"
+                android:icon="@drawable/profil_icon_edit"
+                android:title="Pesan" />
+        </menu>
+    </item>
+
+
+    <item android:title="Laporan">
+        <menu>
+            <item
+                android:id="@+id/lap_belanja"
+                android:icon="@drawable/icon_graph"
+                android:title="Laporan" />
+        </menu>
+    </item>
+
+    <item android:title="Lain-lain">
+        <menu>
+            <item
+                android:id="@+id/info_peternak"
+                android:icon="@drawable/icon_list"
+                android:title="Info Peternak" />
+            <item
+                android:id="@+id/info_kandang"
+                android:icon="@drawable/icon_list"
+                android:title="Info Kandang" />
+            <item
+                android:id="@+id/info_asisten"
+                android:icon="@drawable/icon_list"
+                android:title="Info Asisten" />
+        </menu>
+    </item>
+
+</menu>

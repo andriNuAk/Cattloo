@@ -1,0 +1,114 @@
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardPesanan"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    android:background="@color/colorBgWhite"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardBackgroundColor="@color/colorBgWhite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBgWhite">
+
+        <ImageView
+            android:id="@+id/imgUtama"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/txtSpesies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imgUtama"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/imgUtama"
+            android:layout_toRightOf="@+id/imgUtama"
+            android:text="Test"
+            android:textColor="#000000"
+            android:textSize="12dp" />
+
+        <LinearLayout
+            android:id="@+id/lineaHome1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtSpesies"
+            android:layout_alignStart="@+id/txtSpesies"
+            android:layout_below="@+id/txtSpesies"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/profil_icon_calendar" />
+
+            <TextView
+                android:id="@+id/txtTglPesan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/linearLayout"
+                android:layout_toEndOf="@+id/imgUtama"
+                android:layout_toRightOf="@+id/imgUtama"
+                android:text="New Text"
+                android:textColor="#757575"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtKodeSampel"
+            android:layout_alignStart="@+id/txtSpesies"
+            android:layout_below="@+id/lineaHome1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/profil_icon_bell" />
+
+
+            <TextView
+                android:id="@+id/txtStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtJenisHewan"
+                android:layout_toEndOf="@+id/imgUtama"
+                android:layout_toRightOf="@+id/imgUtama"
+                android:text="New Text"
+                android:textColor="#757575"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnStatus"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/linearLayout"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/imgUtama"
+            android:layout_toRightOf="@+id/imgUtama"
+            android:background="@drawable/button_pressed_yellow"
+            android:text="Lihat Detail"
+            android:textColor="@color/colorBgWhite"
+            android:textSize="9dp" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

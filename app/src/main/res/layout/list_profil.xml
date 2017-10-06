@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relIcon"
+        android:layout_width="35dp"
+        android:layout_height="45dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/iconProfil"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignTop="@+id/relIcon"
+        android:layout_toRightOf="@+id/relIcon"
+        android:layout_toEndOf="@+id/relIcon">
+
+
+
+        <TextView
+            android:id="@+id/txtLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iconProfil"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/iconProfil"
+            android:layout_toRightOf="@+id/iconProfil"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textColor="#212121"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/txtValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iconProfil"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/iconProfil"
+            android:layout_toRightOf="@+id/iconProfil"
+            android:text="TextView"
+            android:textColor="#757575"
+            android:textSize="12dp"
+            android:linksClickable="true"
+            android:autoLink="web"
+            android:textColorLink="#00BCD4"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card"
+    android:layout_margin="10dp"
+    card_view:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relBelanja"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/imgUtamaBeli"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="10dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtSpesies"
+            android:text="Test"
+            android:layout_alignTop="@+id/imgUtamaBeli"
+            android:layout_toRightOf="@+id/imgUtamaBeli"
+            android:layout_toEndOf="@+id/imgUtamaBeli"
+            android:textColor="#000000"
+            android:textSize="13dp"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtSpesies"
+            android:layout_alignLeft="@+id/imgUtamaBeli"
+            android:layout_alignStart="@+id/txtSpesies"
+            android:id="@+id/lineaHome1"
+            android:layout_marginBottom="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:text="Harga Beli"
+                android:textColor="#212121" />
+
+            <TextView
+                android:id="@+id/txtKodeTernak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/linearLayout"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/imgUtamaBeli"
+                android:layout_toRightOf="@+id/imgUtamaBeli"
+                android:text="New Text"
+                android:textColor="#757575"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lineaHome1"
+            android:id="@+id/linearLayout"
+            android:layout_alignLeft="@+id/imgUtamaBeli"
+            android:layout_alignStart="@+id/txtSpesies">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:text="Status Beli"
+                android:textColor="#212121" />
+
+
+            <TextView
+                android:id="@+id/txtNamaPeternak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtLokasi"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/imgUtamaBeli"
+                android:layout_toRightOf="@+id/imgUtamaBeli"
+                android:text="New Text"
+                android:textColor="#757575"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearButton"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/linearLayout"
+            android:layout_toEndOf="@+id/imgUtamaBeli"
+            android:layout_toRightOf="@+id/imgUtamaBeli"
+            android:layout_alignLeft="@+id/imgUtamaBeli"
+            android:layout_alignStart="@+id/txtSpesies">
+
+            <Button
+                android:id="@+id/buttonStatus"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:textSize="10dp"
+                android:text="Batalkan"
+                android:textColor="@color/colorBgWhite"
+                android:background="@drawable/button_border_pressed"
+                />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/buttonKonfirm"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_below="@+id/imgUtamaBeli"
+            android:layout_alignLeft="@+id/imgUtamaBeli"
+            android:layout_alignStart="@+id/imgUtamaBeli"
+            android:textSize="10dp"
+            android:text="Konfirm"
+            android:textColor="@color/colorBgWhite"
+            android:background="@drawable/button_border_pressed_blue"
+            android:layout_marginBottom="10dp"/>
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

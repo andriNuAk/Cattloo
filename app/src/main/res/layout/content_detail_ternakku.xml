@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.dragmetohell.cattloo.ternakku.DetailTernakkuActivity"
+    tools:showIn="@layout/activity_detail_ternakku"
+    android:background="#e7e7e7">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPagerTernakku"
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+            </android.support.v4.view.ViewPager>
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"/>
+
+            <TableLayout
+                android:id="@+id/tableTernakku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/viewPagerTernakku"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp">
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/tableLayout"
+                        android:layout_marginRight="10dp"
+                        android:text="Kode Ternak"
+                        android:textColor="#212121" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/tableLayout"
+                        android:layout_marginRight="10dp"
+                        android:text=":"
+                        android:textColor="#212121" />
+
+                    <TextView
+                        android:id="@+id/txtKodeTernak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:text="New Text"
+                        android:textColor="#757575"
+                        android:textSize="12dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/tableLayout"
+                        android:layout_marginRight="10dp"
+                        android:text="Jenis Hewan/Spesies"
+                        android:textColor="#212121" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/tableLayout"
+                        android:text=":"
+                        android:textColor="#212121" />
+
+                    <TextView
+                        android:id="@+id/txtJenisSpesies"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:text="New Text"
+                        android:textColor="#757575"
+                        android:textSize="12dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/tableLayout"
+                        android:layout_marginRight="10dp"
+                        android:text="Video"
+                        android:textColor="#212121" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/tableLayout"
+                        android:layout_marginRight="10dp"
+                        android:text=":"
+                        android:textColor="#212121" />
+
+                    <TextView
+                        android:id="@+id/txtVideoURL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:text="New Text"
+                        android:textColor="#757575"
+                        android:textSize="12dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/tableLayout"
+                        android:layout_marginRight="10dp"
+                        android:text="Cara Ternak"
+                        android:textColor="#212121" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/tableLayout"
+                        android:layout_marginRight="10dp"
+                        android:text=":"
+                        android:textColor="#212121" />
+
+                    <TextView
+                        android:id="@+id/txtCaraTernak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:text="New Text"
+                        android:textColor="#757575"
+                        android:textSize="12dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/tableLayout"
+                        android:layout_marginRight="10dp"
+                        android:text="Nama Peternak"
+                        android:textColor="#212121" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/tableLayout"
+                        android:layout_marginRight="10dp"
+                        android:text=":"
+                        android:textColor="#212121" />
+
+                    <TextView
+                        android:id="@+id/txtNamaPeternak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:text="New Text"
+                        android:textColor="#757575"
+                        android:textSize="12dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/tableLayout"
+                        android:layout_marginRight="10dp"
+                        android:text="Nama Asisten"
+                        android:textColor="#212121" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/tableLayout"
+                        android:layout_marginRight="10dp"
+                        android:text=":"
+                        android:textColor="#212121" />
+
+                    <TextView
+                        android:id="@+id/txtNamaAsisten"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:text="New Text"
+                        android:textColor="#757575"
+                        android:textSize="12dp" />
+
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_below="@+id/tableTernakku"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="1dp">
+
+                <Button
+                    android:id="@+id/buttonPosting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/tableTernakku"
+                    android:layout_alignRight="@+id/tableTernakku"
+                    android:layout_below="@+id/tableTernakku"
+                    android:text="Posting di Pasar"
+                    android:background="@drawable/button_pressed_blue"
+                    android:textColor="#FFF"
+                    android:layout_marginBottom="10dp"/>
+
+                <Button
+                    android:id="@+id/btnHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/buttonPosting"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/buttonPosting"
+                    android:background="@drawable/button_presed"
+                    android:text="Perawatan Ternak"
+                    android:textColor="#FFF" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

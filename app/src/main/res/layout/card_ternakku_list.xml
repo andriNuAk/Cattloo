@@ -1,0 +1,41 @@
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card"
+    card_view:cardCornerRadius="5dp"
+    android:background="@color/colorBgWhite"
+    card_view:cardBackgroundColor="@color/colorBgWhite"
+    card_view:cardPreventCornerOverlap="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgTernakUtama"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5b0a0a0a"
+            android:id="@+id/txtSpesies"
+            android:text="Test"
+            android:textColor="@color/colorBgWhite"
+            android:textSize="12dp"
+            android:layout_alignBottom="@+id/imgTernakUtama"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"/>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

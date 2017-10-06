@@ -1,0 +1,97 @@
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card"
+    android:layout_margin="10dp"
+    card_view:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgUtamaBeli"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtSpesies"
+            android:text="Test"
+            android:layout_alignTop="@+id/imgUtamaBeli"
+            android:layout_toRightOf="@+id/imgUtamaBeli"
+            android:layout_toEndOf="@+id/imgUtamaBeli"
+            android:textColor="#000000"
+            android:textSize="13dp"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtSpesies"
+            android:layout_alignLeft="@+id/imgUtamaBeli"
+            android:layout_alignStart="@+id/txtSpesies"
+            android:id="@+id/lineaHome1"
+            android:layout_marginBottom="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:text="Harga Jual"
+                android:textColor="#212121" />
+
+            <TextView
+                android:id="@+id/txtHargaJual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/linearLayout"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/imgUtamaBeli"
+                android:layout_toRightOf="@+id/imgUtamaBeli"
+                android:text="New Text"
+                android:textColor="#757575"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lineaHome1"
+            android:id="@+id/linearLayout"
+            android:layout_alignLeft="@+id/imgUtamaBeli"
+            android:layout_alignStart="@+id/txtSpesies">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:text="Tanggal Jual"
+                android:textColor="#212121" />
+
+
+            <TextView
+                android:id="@+id/txtTglJual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtLokasi"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/imgUtamaBeli"
+                android:layout_toRightOf="@+id/imgUtamaBeli"
+                android:text="New Text"
+                android:textColor="#757575"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.dragmetohell.cattloo.DetailHewanActivity"
+    tools:showIn="@layout/activity_detail_hewan"
+    android:background="#e7e7e7">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_height="300dp"
+                android:layout_width="match_parent" >
+
+            </android.support.v4.view.ViewPager>
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewPager"
+                android:id="@+id/listDetailPasar"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"/>
+
+            <RelativeLayout
+                android:id="@+id/relIcon"
+                android:layout_width="35dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/listDetailPasar">
+
+                <ImageView
+                    android:id="@+id/iconProfil"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/profil_icon_file"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignTop="@+id/relIcon"
+                android:layout_toRightOf="@+id/relIcon"
+                android:layout_toEndOf="@+id/relIcon"
+                android:id="@+id/linearPasar">
+
+
+
+                <TextView
+                    android:id="@+id/txtLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/iconProfil"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toEndOf="@+id/iconProfil"
+                    android:layout_toRightOf="@+id/iconProfil"
+                    android:layout_weight="1"
+                    android:text="Deskripsi"
+                    android:textColor="#212121"
+                    android:textSize="12dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtDeskrips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/iconProfil"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toEndOf="@+id/iconProfil"
+                    android:layout_toRightOf="@+id/iconProfil"
+                    android:text="TextView"
+                    android:textColor="#757575"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Masukan ke kandang"
+                android:id="@+id/btnKandangkan"
+                android:layout_below="@+id/linearPasar"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button_presed"
+                android:textColor="#ffffff"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="25dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

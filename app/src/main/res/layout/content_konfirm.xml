@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.dragmetohell.cattloo.konfirmbelanja.KonfirmActivity"
+    tools:showIn="@layout/activity_konfirm">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageView2"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/cow_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:text="Konfirmasi Pembelian"
+                android:id="@+id/textView2"
+                android:layout_below="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp"
+                android:textColor="@color/colorTextBgGrey"
+                android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtNamaPemilik"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/text_pressed"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:inputType="text"
+                android:hint="Nama Pemilik Rekening"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtNamaBank"
+                android:layout_below="@+id/txtNamaPemilik"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/text_pressed"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:inputType="text"
+                android:hint="Nama Bank"
+                android:ems="10"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTglBayar"
+                android:layout_below="@+id/txtNamaBank"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/text_pressed"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:inputType="text"
+                android:hint="Tanggal Bayar"
+                android:ems="10"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/txtNominal"
+                android:layout_below="@+id/txtTglBayar"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/text_pressed"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Nominal"
+                android:ems="10"/>
+
+            <ImageView
+                android:id="@+id/imageBukti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNominal"
+                 />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnUpload"
+                android:layout_below="@+id/imageBukti"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button_border_pressed_blue"
+                android:textColor="#ffffff"
+                android:layout_marginTop="10dp"
+                android:text="UNGGAH BUKTI"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnKirim"
+                android:layout_below="@+id/btnUpload"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button_border_pressed"
+                android:textColor="#ffffff"
+                android:layout_marginTop="10dp"
+                android:text="KIRIM BUKTI"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

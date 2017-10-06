@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.dragmetohell.cattloo.DetailAlumniActivity"
+    tools:showIn="@layout/activity_detail_alumni"
+    android:background="#e7e7e7">
+
+    <TextView
+        android:id="@+id/txtStatusConn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPagerPesan"
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+            </android.support.v4.view.ViewPager>
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+
+            <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relHarga"
+            android:layout_below="@+id/viewPagerPesan">
+
+            <RelativeLayout
+                android:id="@+id/relIconHarga"
+                android:layout_width="35dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/iconHarga"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/profil_icon_money"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignTop="@+id/relIconHarga"
+                android:layout_toRightOf="@+id/relIconHarga"
+                android:layout_toEndOf="@+id/relIconHarga"
+                android:id="@+id/linearHarga">
+
+
+
+                <TextView
+                    android:id="@+id/lblHarga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/iconProfil"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toEndOf="@+id/iconProfil"
+                    android:layout_toRightOf="@+id/iconProfil"
+                    android:layout_weight="1"
+                    android:text="Harga Jual"
+                    android:textColor="#212121"
+                    android:textSize="12dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtHarga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/iconProfil"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toEndOf="@+id/iconProfil"
+                    android:layout_toRightOf="@+id/iconProfil"
+                    android:text="TextView"
+                    android:textColor="#757575"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/linearHarga"
+                android:layout_toRightOf="@+id/relIconHarga"
+                android:layout_toEndOf="@+id/relIconHarga"
+                android:id="@+id/linearMargin"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:id="@+id/lblMargin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/iconProfil"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toEndOf="@+id/iconProfil"
+                    android:layout_toRightOf="@+id/iconProfil"
+                    android:layout_weight="1"
+                    android:text="Margin"
+                    android:textColor="#212121"
+                    android:textSize="12dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtMargin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/iconProfil"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toEndOf="@+id/iconProfil"
+                    android:layout_toRightOf="@+id/iconProfil"
+                    android:text="TextView"
+                    android:textColor="#757575"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/linearMargin"
+                android:layout_toRightOf="@+id/relIconHarga"
+                android:layout_toEndOf="@+id/relIconHarga"
+                android:id="@+id/linearUntung"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:id="@+id/lblUntung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/iconProfil"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toEndOf="@+id/iconProfil"
+                    android:layout_toRightOf="@+id/iconProfil"
+                    android:layout_weight="1"
+                    android:text="Untung"
+                    android:textColor="#212121"
+                    android:textSize="12dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtUntung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/iconProfil"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toEndOf="@+id/iconProfil"
+                    android:layout_toRightOf="@+id/iconProfil"
+                    android:text="TextView"
+                    android:textColor="#757575"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relSpesies"
+            android:layout_below="@+id/relHarga">
+
+            <RelativeLayout
+                android:id="@+id/relIconSpesies"
+                android:layout_width="35dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/iconSpesies"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/profil_icon_cow"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignTop="@+id/relIconSpesies"
+                android:layout_toRightOf="@+id/relIconSpesies"
+                android:layout_toEndOf="@+id/relIconSpesies"
+                android:id="@+id/linearSpesies">
+
+
+
+                <TextView
+                    android:id="@+id/lblSpesies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/iconProfil"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toEndOf="@+id/iconProfil"
+                    android:layout_toRightOf="@+id/iconProfil"
+                    android:layout_weight="1"
+                    android:text="Spesies"
+                    android:textColor="#212121"
+                    android:textSize="12dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtSpesies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/iconProfil"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toEndOf="@+id/iconProfil"
+                    android:layout_toRightOf="@+id/iconProfil"
+                    android:text="TextView"
+                    android:textColor="#757575"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relBobot"
+            android:layout_below="@+id/relSpesies">
+
+            <RelativeLayout
+                android:id="@+id/relIconBobot"
+                android:layout_width="35dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/iconBobot"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/profil_icon_calendar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignTop="@+id/relIconBobot"
+                android:layout_toRightOf="@+id/relIconBobot"
+                android:layout_toEndOf="@+id/relIconBobot"
+                android:id="@+id/linearBobot"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:id="@+id/lblTanggal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/iconProfil"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toEndOf="@+id/iconProfil"
+                    android:layout_toRightOf="@+id/iconProfil"
+                    android:layout_weight="1"
+                    android:text="Tanggal Jual"
+                    android:textColor="#212121"
+                    android:textSize="12dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtTanggal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/iconProfil"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toEndOf="@+id/iconProfil"
+                    android:layout_toRightOf="@+id/iconProfil"
+                    android:text="TextView"
+                    android:textColor="#757575"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relVideo"
+            android:layout_below="@+id/relBobot">
+
+            <RelativeLayout
+                android:id="@+id/relIconVideo"
+                android:layout_width="35dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/iconVideo"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/profil_icon_tv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignTop="@+id/relIconVideo"
+                android:layout_toRightOf="@+id/relIconVideo"
+                android:layout_toEndOf="@+id/relIconVideo"
+                android:id="@+id/linearVideo">
+
+
+
+                <TextView
+                    android:id="@+id/lblVideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/iconProfil"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toEndOf="@+id/iconProfil"
+                    android:layout_toRightOf="@+id/iconProfil"
+                    android:layout_weight="1"
+                    android:text="Video"
+                    android:textColor="#212121"
+                    android:textSize="12dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtVideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/iconProfil"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toEndOf="@+id/iconProfil"
+                    android:layout_toRightOf="@+id/iconProfil"
+                    android:text="TextView"
+                    android:textColor="#757575"
+                    android:textSize="12dp"
+                    android:clickable="true"
+                    android:autoLink="web"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
